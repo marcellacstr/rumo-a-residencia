@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*importando a fonte montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap');
+
+:root {
+	--cor01: #020202; /*preto (verde quase preto)*/
+	--cor02: #194D2E; /*Verde escuro*/
+	--cor03: #D2E59E; /*verde matcha claro*/
+	--cor04: #CBD081; /*verde meleca*/
+	--cor05: #717744; /*verde militar*/
+	--cor06: #F0F0F0; /*cinza bem clar*/
+	--cor07: #3E3E40; /*cinza escuro*/
+
+	--fontetexto: 'Montserrat', serif;
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.aside {
+    background-color: var(--cor02);
+    color: var(--cor06);
+    font-family: var(--fontetexto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    min-width: 300px;
+    
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.logo-imagem {
+    width: 30%;
+}
+
+.logo-titulo {
+    font-family: var(--fontetexto);
+    font-size: 1.5em;
+    margin: auto;
+    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: var(--cor04);
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+.search-button:hover {
+    background-color: var(--cor05);
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.lista-menu {
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-lista {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.link-menu {
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.link-menu:hover {
+    color: var(--cor03);
+    text-decoration: underline;
+}
+
+.icone-menu {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.container-logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.logout {
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+}
+
+.logout:hover {
+    color: var(--cor03);
+    text-decoration: underline;
+}
+
+

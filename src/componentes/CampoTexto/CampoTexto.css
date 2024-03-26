@@ -1,0 +1,32 @@
+
+.campo-texto {
+    margin: 32px 0px; 
+    width: auto;
+    position: relative;
+    font-family: 'Montserrat', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.campo-texto label {
+    width: auto;
+    padding: 8px;
+    color: gray;  
+}
+
+.campo-texto input {
+    background-color: lightgray;
+    border-radius: 8px;
+    width: 80%;
+    border: none;
+    font-size: 24px;
+    padding: 24px; 
+    box-sizing: border-box;
+}
+
+.campo-texto input:hover {
+    color: black;
+    font-size: 26px;
+}
