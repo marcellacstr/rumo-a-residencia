@@ -28,6 +28,7 @@ https://www.youtube.com/watch?v=UUJfTsn6S_Y - Funcionou até certo ponto e foi o
 https://www.youtube.com/watch?v=tgcCl52EN84 - esse aqui usa esse Supabase que eu não sei pra quê serve e se é necessário 
 
 
+
 const handleLogin = async (credentialResponse) => {
     var obj = jwtDecode(credentialResponse.credential);
     var data = JSON.stringify(obj);
