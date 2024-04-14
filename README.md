@@ -17,3 +17,35 @@ Cores:
 	--fontetexto: 'Montserrat', serif;
 
 }
+
+tutoriais que achei sobre login no google 
+
+https://www.youtube.com/watch?v=c2b2yUNWFzI - How to Create Events in Google Calendar API using OAuth2.0. Os componentes tão desatualizados e não consigo definir o escopo. Parei no minuto 17 
+
+
+https://www.youtube.com/watch?v=UUJfTsn6S_Y - Funcionou até certo ponto e foi o que fez funcionar até aqui, mas não ensina como linkar com o escopo da api do google calendar 
+
+https://www.youtube.com/watch?v=tgcCl52EN84 - esse aqui usa esse Supabase que eu não sei pra quê serve e se é necessário 
+
+
+Id do cliente 453808756354-8ell0stntoe33sl9manra8f6djcc8k5l.apps.googleusercontent.com
+
+Chave secreta do cliente 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 
+
+const handleLogin = async (credentialResponse) => {
+    var obj = jwtDecode(credentialResponse.credential);
+    var data = JSON.stringify(obj);
+    console.log(data);
+
+    const data = {your data to send to server};
+
+    const config = {
+      method: 'POST',
+      url: 'your backend server or endpoint',
+      headers: {},
+      data: data
+    }
+
+  await axios(config)
+}
+onSuccess={handleLogin}

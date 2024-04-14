@@ -17,11 +17,6 @@ function MenuLateral() {
                     <h1 className='logo-titulo'>Rumo à Residência</h1>
                 </div>
 
-                <div className='search-container'>
-                    <input className='search-input' type='search' placeholder='Pesquise aqui'></input>
-                    <button className='search-button'><BsSearch/></button>
-                </div>
-
                 <nav className='container-menu'>
                     <ul className='lista-menu'>
                         <li className='item-lista'> 

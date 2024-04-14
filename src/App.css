@@ -10,11 +10,16 @@
   "aside main"
   "aside footer";
 }
+.container-maior{
+  background-color: rgb(242, 242, 242);
+}
 
 .aside {
   grid-area: aside;
 }
-
+.container-principal{
+  padding: 80px;
+}
 .header {
   grid-area: header;
 }

@@ -1,30 +1,25 @@
 
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
-import MenuLateral from './componentes/menuLateral/MenuLateral';
-import CampoTexto from './componentes/CampoTexto/CampoTexto';
+import { GoogleLogin, GoogleOAuthProvider, GoogleLoginButton, useGoogleLogin } from '@react-oauth/google';
+import CriaAgenda from './screens/CriaAgenda';
+
 
 
 function App() {
   
+
   return (
-    <div className="App">
-      <MenuLateral className="aside"/>
-
-      <header className='header'>
-
-      </header>
-
-      <main className='main'>
-          <CampoTexto label="Nome" placeholder="Digite o nome da sua agenda"/> 
-          <CampoTexto label="Nome" placeholder="Digite o nome da sua agenda"/> 
-          
-      </main>
-
-      <footer className='footer'>
-
-      </footer>
-    </div>
+    <GoogleLogin
+      onSuccess={credentialResponse => {
+        console.log(credentialResponse);
+      }}
+      onError={() => {
+        console.log('Login Failed');
+      }}
+      scope="https://www.googleapis.com/auth/calendar"
+    />
   );
 }
 

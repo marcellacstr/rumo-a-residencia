@@ -1,6 +1,7 @@
-
+/*<label> {label} </label>
+<input placeholder={placeholder}></input>*/
 .campo-texto {
-    margin: 32px 0px; 
+    margin: 0px 0px; 
     width: auto;
     position: relative;
     font-family: 'Montserrat', serif;
@@ -16,7 +17,7 @@
     color: gray;  
 }
 
-.campo-texto input {
+.campo-texto .input{
     background-color: lightgray;
     border-radius: 8px;
     width: 80%;
@@ -28,5 +29,5 @@
 
 .campo-texto input:hover {
     color: black;
-    font-size: 26px;
+    font-size: 16px;
 }

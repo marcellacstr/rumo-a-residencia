@@ -1,5 +1,6 @@
 import React from "react";
 import "./CampoTexto.css";
+import TextField from '@mui/material/TextField';
 
 const CampoTexto = (props) => {
     const label = props.label
@@ -7,8 +8,13 @@ const CampoTexto = (props) => {
 
     return (
         <div className="campo-texto"> 
-            <label> {label} </label>
-            <input placeholder={placeholder}></input>
+            <TextField
+            fullWidth
+            id="outlined-helperText"
+            label={label}
+            defaultValue={placeholder}
+            
+            />
         </div>
     );
 }
