@@ -28,10 +28,6 @@ https://www.youtube.com/watch?v=UUJfTsn6S_Y - Funcionou até certo ponto e foi o
 https://www.youtube.com/watch?v=tgcCl52EN84 - esse aqui usa esse Supabase que eu não sei pra quê serve e se é necessário 
 
 
-Id do cliente 453808756354-8ell0stntoe33sl9manra8f6djcc8k5l.apps.googleusercontent.com
-
-Chave secreta do cliente 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 
-
 const handleLogin = async (credentialResponse) => {
     var obj = jwtDecode(credentialResponse.credential);
     var data = JSON.stringify(obj);
